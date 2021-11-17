@@ -4,20 +4,6 @@
 
 /* https://piccalil.li/blog/a-modern-css-reset/ */
 
-/* Reset margins */
-
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
-figure,
-picture {
-    margin: 0;
-}
-
 /* Box sizing rules */
 *,
 *::before,
@@ -93,5 +79,36 @@ select {
   }
 }
 
+/* ------------------ */
+/* Utility classes           */
+/* ------------------ */
 
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.grid {
+    display: grid;
+    gap: var(--gap, 1rem);
+}
+
+.container {
+    padding-inline: 2em;
+    max-width: 80rem;
+    margin-inline: auto;    
+}
+
+/* screen reader only */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap; /*added line */   
+    border: 0;  
+}
 
