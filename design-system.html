@@ -126,14 +126,30 @@
                     text-dark uppercase fs-600 ff-serif">Explore</a>
                 </div>
 
-                <div style="margin-bottom: 50vh;">
+                <div style="margin-bottom: 50vh; --flow-space: 4rem; min-width: 30vw" class="flow">
                     <!-- Tabs -->
-
+                    <div class="tab-list underline-indicators flex">
+                        <button aria-selected="true" class="uppercase text-light
+                         bg-dark ff-sans-cond letter-spacing-2">Moon</button>
+                        <button aria-selected="false" class="uppercase text-light
+                         bg-dark ff-sans-cond letter-spacing-2">Mars</button>
+                        <button aria-selected="false" class="uppercase text-light
+                         bg-dark ff-sans-cond letter-spacing-2">Europa</button>
+                    </div>
 
                     <!-- Dots -->
-
+                    <div class="dot-indicators flex">
+                        <button aria-selected="true"><span class="sr-only">Slide title</span></button>
+                        <button aria-selected="false"><span class="sr-only">Slide title</span></button>
+                        <button aria-selected="false"><span class="sr-only">Slide title</span></button>
+                    </div>
 
                     <!-- Numbers -->
+                    <div class="number-indicators flex">
+                        <button aria-selected="true">1</button>
+                        <button aria-selected="false">2</button>
+                        <button aria-selected="false">3</button>
+                    </div>
                 </div>
             </div>
 
