@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="index.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
     <title>Space tourism website</title>
+
+    <script src="index.js" defer></script>
 </head>
 
 <body class="home">
@@ -21,8 +23,9 @@
         <div>
             <img src="./assets/shared/logo.svg" alt="space tourism logo" class="logo">
         </div>
-        <!-- <nav>
-            <ul class="primary-navigation underline-indicators flex">
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+        <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
                 <li class="active">
                     <a class="uppercase ff-sans-cond text-white letter-spacing-2"
                         href="index.html"><span>01</span>Home</a>
@@ -40,7 +43,7 @@
                         href="technology.html"><span>04</span>Technology</a>
                 </li>
             </ul>
-        </nav> -->
+        </nav>
     </header>
 
     <div class="grid-container grid-container--home">
